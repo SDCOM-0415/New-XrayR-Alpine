@@ -9,7 +9,7 @@
 # 安装脚本
 
 ```shell script
-apk add wget ; wget -O /usr/bin/xrayr https://hw-sg.sdcom-ghproxy.us.kg/https://raw.githubusercontent.com/mingge9527/New-XrayR-Alpine/main/xrayr.sh ; chmod 777 /usr/bin/xrayr ; xrayr
+apk add wget ; wget -O /usr/bin/xrayr https://hw-sg.sdcom-ghproxy.us.kg/https://github.com/SDCOM-0415/New-XrayR-Alpine/raw/refs/heads/main/xrayr.sh ; chmod 777 /usr/bin/xrayr ; xrayr
 ```
 下次运行即可直接输入
 ```shell script
