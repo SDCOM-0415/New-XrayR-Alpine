@@ -64,7 +64,7 @@ fi
 
 # 定义安装XrayR的函数
 install_xrayr() {
-    read -p "输入指定版本 例 v0.9.0 (回车默认最新版): " version_input
+    read -p "输入指定版本 例 v0.9.4 (回车默认最新版): " version_input
 
     if [ -z "$version_input" ]; then
         # 用户按下回车，获取最新版本
@@ -133,7 +133,7 @@ install_xrayr() {
     fi
     mkdir XrayR
     cd XrayR
-    wget -N --no-check-certificate "https://github.com/XrayR-project/XrayR/releases/download/${last_version}/XrayR-linux-${arch}.zip"
+    wget -N --no-check-certificate "https://hw-sg.sdcom-ghproxy.us.kg/https://github.com/XrayR-project/XrayR/releases/download/${last_version}/XrayR-linux-${arch}.zip"
     unzip XrayR-linux-${arch}.zip
     chmod 777 XrayR
     echo "正在写入rc-service……"
@@ -141,7 +141,7 @@ install_xrayr() {
     rc-service XrayR stop
     rc-update del XrayR default
     rm XrayR
-    wget https://raw.githubusercontent.com/mingge9527/New-XrayR-Alpine/main/XrayR
+    wget https://hw-sg.sdcom-ghproxy.us.kg/https://raw.githubusercontent.com/mingge9527/New-XrayR-Alpine/main/XrayR
     chmod 777 XrayR
     rc-update add XrayR default
 
